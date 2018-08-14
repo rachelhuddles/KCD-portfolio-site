@@ -1,0 +1,246 @@
+<!-- Rachel H. Lewis
+May 2018
+Mock-up portfolio site for Kira Chambers Design -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kira Chambers Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Clear cache on load -->
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <!-- Link to external style sheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<!-- Add icon library for social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120918376-1"></script>
+</head>
+
+<body style="max-width:1600px">
+
+    <!-- Top menu on small screens -->
+	<div class="topnav" id="myTopnav">
+	  <div class="top-nav-logo-small"><b>KIRA CHAMBERS</b></div> <!-- For small screens -->
+	  <div class="top-nav-logo-medium"><b>KIRA CHAMBERS</b> DESIGN</div> <!-- For medium screens -->
+	  <a href="#portfolio" class="top-nav-links">PORTFOLIO</a>
+	  <a href="#about" class="top-nav-links">ABOUT</a>
+	  <a href="#contact" class="top-nav-links">CONTACT</a>
+	  <a href="javascript:void(0);" class="icon" onclick="openFunction()">☰ </a>
+	</div>
+
+    <!-- Sidebar/menu -->
+    <nav id="mySidebar">
+		<img src="images/logo.jpg" alt="Kira Chambers Design logo">
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#contact">CONTACT</a>
+		
+		<!-- Add font awesome icon and link for facebook account-->
+		<a href="https://www.facebook.com/Kira-Chambers-Design-407407933003142/" target="_blank" class="fa fa-facebook"></a>
+		<!-- Add font awesome icon and link for instagram account-->
+		<a href="https://www.instagram.com/kirachambersdesign/" target="_blank" class="fa fa-instagram"></a>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+
+        <!-- Photo grid -->
+        <div id="portfolio">
+			<!-- Divide row into three columns on most screens (leave 100% width on extra-small) -->
+			<!-- Begin grid page 1 -->
+			<div id="page1">
+				<!-- Abstract Series 4 -->
+				<div class="row">
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series4_Abstract1.jpg" onclick="onClick(this)" alt="Abstract Series 4 Abstract 1">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series4_Abstract2.jpg" onclick="onClick(this)" alt="Abstract Series 4 Abstract 2">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series4_Abstract3.jpg" onclick="onClick(this)" alt="Abstract Series 4 Abstract 3">
+					</div>
+				</div>
+				<!-- Abstract Series 3 -->
+				<div class="row">
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series3_Abstract1.jpg" onclick="onClick(this)" alt="Abstract Series 3 Abstract 1">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series3_Abstract2.jpg" onclick="onClick(this)" alt="Abstract Series 3 Abstract 2">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/Series3_Abstract3.jpg" onclick="onClick(this)" alt="Abstract Series 3 Abstract 3">
+					</div>
+				</div>
+			<!-- Ends page 1  -->
+			</div> 
+			
+			<!-- Begin grid page 2 -->
+			<div id="page2">
+				<div class="row">
+					<!-- Abstract Series 2 -->
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Series2_Abstract1.jpg" onclick="onClick(this)" alt="Abstract Series 2 Abstract 1">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Series2_Abstract2.jpg" onclick="onClick(this)" alt="Abstract Series 2 Abstract 2">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Series2_Abstract3.jpg" onclick="onClick(this)" alt="Abstract Series 2 Abstract 3">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Series2_Abstract3.jpg" onclick="onClick(this)" alt="Abstract Series  Abstract 3">
+					</div>
+				</div>
+				<div class="row">
+					<!-- Abstracts -->
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Abstract3.jpg" onclick="onClick(this)" alt="Abstract 3">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Abstract4.jpg" onclick="onClick(this)" alt="Abstract 4">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Abstract5.jpg" onclick="onClick(this)" alt="Abstract 5">
+					</div>
+					<div class="col col-xs-12 col-s-3 col-m-3 col-l-3 col-xl-3">
+						<img src="images/Abstract6.jpg" onclick="onClick(this)" alt="Abstract 6">
+					</div>
+				</div>
+			<!-- Ends page 2 -->
+			</div>
+
+			<!-- Begin grid page 4 -->
+			<div id="page3">
+				<div class="row">
+					<!-- Fitness advertisements -->
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/fitness1.jpg" onclick="onClick(this)" alt="Advertisement for Fitness Goals Concept">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/fitness3.jpg" onclick="onClick(this)" alt="Advertisement for Fitness Goals Concept">
+					</div>
+					<div class="col col-xs-12 col-s-4 col-m-4 col-l-4 col-xl-4">
+						<img src="images/fitness2.jpg" onclick="onClick(this)" alt="Advertisement for Fitness Goals Concept">
+					</div>
+				</div>
+			<!-- Ends page 4 -->
+			</div>
+			
+            <!-- Pagination -->
+			<div class="pagination">
+                <div class="pages-bar">
+                    <a href="#page1" onclick="page1()" class="pagination-button">1</a>
+                    <a href="#page2" onclick="page2()" class="pagination-button">2</a>
+                    <a href="#page3" onclick="page3()" class="pagination-button">3</a>
+                </div>
+            </div>
+
+            
+        <!-- End of portfolio -->
+        </div>
+
+        <!-- Modal for full size images on click-->
+		<div id="modal01" class="modal" onclick="this.style.display='none'">
+			<span class="close">×</span>
+			<div class="modal-content">
+				<img id="img01">
+				<p id="caption"></p>
+			</div>
+		</div>
+
+        <!-- About section -->
+        <div id="about">
+            <h1><b>ABOUT ME</b></h1>
+			<img src="images/aboutme3.jpg" alt="About Me" class="about-img">
+			<div class="about-content" style="max-width:600px">
+				<h2>Kira Chambers</h2>
+				<h3>BRANDING DESIGNER</h3>
+				<h4>working with small and large scale companies to meet their branding needs.</h4>
+				<p>Thanks for stopping by! I'm Kira, a highly motivated and passionate designer. 
+				There's nothing I love more than helping clients reach their full potential when it comes to developing and creating their brand identity!</p>
+				<p>Developing your brand identity is essential for any business trying to reach their consumers. 
+				Your identity should be just as unique as the services your company offers.</p> 
+				<p>Are you ready to make your mark? A mark that perfectly represents your company? 
+				Whether you’re needing an identity for a large corporation or a small family-owned business, I'm here to help! 
+				Please fill out the form below to contact me and set up a meeting.</p>
+			</div>
+        </div>
+
+        <!-- Contact section -->
+        <div id="contact">
+            <h1><b>CONTACT ME</b></h1>
+            <h3>contact me to schedule a consultation and i will bring the creative inspiration!</h3>
+				<!-- Link to send email -->
+				<div class="contact-link-container">
+					<a href="mailto:kirachambersdesign@gmail.com" class="contact-link">SEND ME AN E-MAIL</a>
+				</div>
+		</div>
+		
+		<!-- Website credit -->
+		<div id="footer">
+			<p>&copy; Rachel Lewis 2018 for Kira Chambers Design</p>
+		</div>
+		
+    <!-- End page content -->
+    </div>
+
+    <script>
+		// Script to open extra options on top navbar (smaller screens only)
+		// Adds the class "responsive" to the topnav
+		function openFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+		
+        // Modal image gallery
+		// Use the image "alt" as caption
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+		
+		// Script to move between portfolio grid pages
+		function page1() {			
+			// Hide the other pages
+			document.getElementById("page2").style.display = "none";
+			document.getElementById("page3").style.display = "none";
+			
+			// Display page 2
+			document.getElementById("page1").style.display = "inline-block";
+		}
+		
+		function page2() {			
+			// Hide the other pages
+			document.getElementById("page1").style.display = "none";
+			document.getElementById("page3").style.display = "none";
+			
+			// Display page 2
+			document.getElementById("page2").style.display = "inline-block";
+		}
+			
+		function page3() {			
+			// Hide the other pages
+			document.getElementById("page1").style.display = "none";
+			document.getElementById("page2").style.display = "none";
+			
+			// Display page 2
+			document.getElementById("page3").style.display = "inline-block";
+		}
+	</script>
+</body>
+</html>

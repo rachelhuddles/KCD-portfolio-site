@@ -1,0 +1,689 @@
+/* 
+	Author: Rachel H. Lewis
+	May 2018
+	Mock-up portfolio site for Kira Chambers Design 
+*/
+
+/* Defining box sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Setting a font family for the body */
+body {
+	font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+/* Extra small devices (phones, 550px and down) */
+@media only screen and (max-width: 550px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 550px and up) */
+@media only screen and (min-width: 550px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-l-1 {
+        width: 8.33%;
+    }
+    .col-l-2 {
+        width: 16.66%;
+    }
+    .col-l-3 {
+        width: 25%;
+    }
+    .col-l-4 {
+        width: 33.33%;
+    }
+    .col-l-5 {
+        width: 41.66%;
+    }
+    .col-l-6 {
+        width: 50%;
+    }
+    .col-l-7 {
+        width: 58.33%;
+    }
+    .col-l-8 {
+        width: 66.66%;
+    }
+    .col-l-9 {
+        width: 75%;
+    }
+    .col-l-10 {
+        width: 83.33%;
+    }
+    .col-l-11 {
+        width: 91.66%;
+    }
+    .col-l-12 {
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1 {
+        width: 8.33%;
+    }
+    .col-xl-2 {
+        width: 16.66%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.33%;
+    }
+    .col-xl-5 {
+        width: 41.66%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.33%;
+    }
+    .col-xl-8 {
+        width: 66.66%;
+    }
+    .col-xl-9 {
+        width: 75%;
+    }
+    .col-xl-10 {
+        width: 83.33%;
+    }
+    .col-xl-11 {
+        width: 91.66%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
+}
+
+/*Limit the max width of the page */
+body {
+	max-width: 1250px;
+}
+
+/* Modifies the top nav bar (shown on smaller and media screens) */
+.topnav {
+	background-color: #fff;
+	box-shadow: 0px 5px 8px #888888;
+    color: #757575;
+	display: block;
+	height: 65px;
+    letter-spacing: 1px;
+	line-height: 65px; /* vertically aligns the text in the middle */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* The initial display for the top-nav-links and top-nav-logo-medium is hidden (on smallest devices) */
+.top-nav-links, .top-nav-logo-medium {
+	display: none;
+}
+
+/* Show the nav links and medium screen logo, 
+Hide the icon and small screen logo on devices with a min screen width of 600px */
+@media only screen and (min-width: 600px) {
+	.top-nav-links {
+		display: block;
+	}
+	.top-nav-logo-medium {
+		display: block;
+	}
+	.icon {
+		display: none;
+	}
+	.top-nav-logo-small { 
+		display: none;
+	}
+}
+
+/* Hide the top navbar when the screen size transitions to showing the sidebar */
+@media only screen and (min-width: 992px) {
+    .topnav {
+        display: none;
+    }
+}
+
+/* The JavaScript function openFunction() adds the responsive class to the topnav when a user clicks on the icon. */
+@media screen and (max-width: 600px) {
+	/* Keeps the icon in the top right position */
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/* Modify the top-nav height and line-height to show all links vertically */
+	.topnav.responsive {
+		display: block;
+		float: left;
+		height: 100px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.topnav.responsive a {
+		color: inherit;
+		clear: left;
+		display: block;
+		float: left;
+		padding: 0px 20px;
+		text-decoration: none;
+	}
+}
+
+/* Style the top-nav-logo and float it to the left */
+.top-nav-logo-small, .top-nav-logo-medium {
+	color: inherit;
+	float: left;
+	max-width: 85%;
+	padding: 0px 8px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+/* Modify the top-nav-links and icon on top nav bar for small screens */
+.top-nav-links, .icon {
+	color: inherit;
+	float: right;
+	padding: 0px 8px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+/* Clear the floats after the topnav */
+.topnav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style the topnav links on hover */
+.topnav a:hover {
+    color: #000;
+    background-color: #ccc;
+	font-weight: bold;
+	transition: background-color .3s;
+}
+
+/* Modifies the sidebar shown on larger screens */
+#mySidebar {
+    animation: animateleft 0.4s;
+    background-color: #fff;
+    color: #757575;
+    display: none;
+    height: 100%;
+    letter-spacing: 1px;
+    overflow: auto;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 300px;
+    z-index: 1;
+}
+
+/* Modifies the image (logo) in the sidebar */
+#mySidebar img {
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto; 
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
+
+/* Modify the sidebar links */
+#mySidebar a {
+    background-color: inherit;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    float: none;
+    line-height: 200%;
+    outline: 0;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: normal;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Style the sidebar links on hover */
+
+#mySidebar a:hover {
+    color: white;
+    background-color: rgb(275, 155, 136);
+}
+
+/* For safari */
+#mySidebar a {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Show the sidebar only on larger screens */
+
+@media only screen and (min-width: 992px) {
+    #mySidebar {
+        display: block;
+    }
+}
+
+/* Give the page content a left margin to create room for sidebar */
+@media only screen and (min-width: 993px) {
+    .page-content {
+        margin-left: 300px;
+    }
+}
+
+/* Apply a dark grey background to portfolio and contact sections */
+#portfolio, #contact {
+    background-color: #757575;
+    padding-left: 2px;
+    padding-right: 2px; /* evens out the padding between the images, for a total of 4px on the left and right of each image in the grid */
+    
+}
+
+/* Give the first row a top margin to display it beneath the top menu */
+.row:first-of-type {
+    display: inline-block;
+    margin-top: 70px; /* to clear the top menu height */
+}
+
+/* Decrease the top margin to zero and move the grid up to the top of the screen on large and xl devices */
+@media only screen and (min-width: 992px) {
+    .row:first-of-type {
+        margin-top: 0;
+        padding-top: 2px;
+    }
+}
+
+/* Clears the floats around the grid rows */
+.row::before, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Modifies the columns in RWD grid layout */
+.col {
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* Modifying the images in the columns */
+
+.col img {
+    cursor: pointer;
+    max-width: 100%;
+	transition: 0.25s;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.col img:hover {
+	opacity: 0.8;
+	transition: 0.25s;
+}
+
+#page2, #page3, #page4 {
+	display: none;
+}
+
+/* The container holding the pagination buttons */
+.pagination {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* The bar of grid page numbers */
+.pages-bar {
+    display: inline-block;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* Styling the pagination buttons */
+.pagination-button {
+    background-color: inherit;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+	font-size: 110%;
+    outline:0;
+    overflow: hidden;
+    padding:8px 16px;
+    text-align: center;
+    text-decoration: none;
+	transition: 0.25s;
+    vertical-align: middle;
+    white-space: normal;
+    width: auto;
+}
+
+/* Modify the pagination buttons on hover */
+.pagination-button:hover {
+	background-color: rgba(191, 191, 191, 0.4);
+	border: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+
+/* Modify the modal image */
+#img01 {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Increasing the font size on "about me" headings */
+#about h3, h4 {
+	font-size: 125%;
+}
+
+/* Increasing the font size on "about me" headings */
+#about h2 {
+	font-size: 145%;
+}
+
+/* Styling the headers in the about me section */
+#about h1 {
+    text-align: center;
+    letter-spacing: 1.5px;
+	color: #666666; /* A darker grey than what is used in most rest of project, to help header stand out */
+	padding-top: 64px;
+}
+
+/* Modifies the other headings in "about me" section */
+#about h2, h3, h4 {
+	text-align: center;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #666666;
+	letter-spacing: 1.5px;
+}
+
+/* Modify the h4 in the about sections */
+#about h4 {
+	font-variant: small-caps;
+}
+
+/* Modify the paragraph element in the "about me" section */
+#about p {
+	text-align: justify;
+	color: #1a1a1a;
+}
+
+/* The image in the "about me" section */
+.about-img {
+    width: 35%;
+    height: auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* Modifies the content in the "about me" section */
+.about-content {
+    margin: auto;
+}
+
+/* Modifies the "contact me" section heading */
+#contact h1 {
+    text-align: center;
+    letter-spacing: 1.5px;
+	color: white;
+	padding-top: 64px;
+}
+
+/* Modifies the other heading in "contact" section */
+#contact h3 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	letter-spacing: 1.5px;
+	font-variant: small-caps;
+	max-width: 900px;
+}
+
+.contact-link-container {
+	text-align: center;
+	padding: 30px 0px 35px 0px;
+}
+
+/* Modifies the email button in the "Contact" section */
+.contact-link {
+	display: inline-block;
+	text-align: center;
+	padding: 16px;
+	color: black;
+	border: 3px solid #797979;
+	text-decoration: none;
+	font-size: 115%;
+	margin: 15px;
+	color: white;
+	background-color: rgb(275, 155, 136);
+}
+
+/* Modifies the email button in the "Contact" section */
+.contact-link:hover {
+	padding: 22px;
+	font-weight: bold;
+}
+
+/*Modify text in footer */
+#footer {
+	text-align: center;
+	color: #757575;
+	font-size: 85%;
+}
